@@ -1,0 +1,196 @@
+    .is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    }
+
+
+    .backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    transition: all 250ms $cubic;
+    }
+    
+    .modal{
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: $txt-white;
+    border-radius: 4px;
+
+        &__close-btn{
+        display: flex;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background: $txt-white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        padding: 0;
+        justify-content: center;
+        cursor: pointer;
+        transition: fill 250ms $cubic;
+        }
+        
+            &__close-btn:hover,
+            &__close-btn:focus{
+            fill: $fha-blue;
+            }
+
+                &__description{
+                justify-content: center;
+                display: flex;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 1.15;
+                letter-spacing: 0.03em;
+                color: $b-dark;
+                margin-bottom: 12px;
+               }
+    }
+    
+        .modal-form{
+        display: flex;
+        flex-direction: column;
+
+            &__field{
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.166;
+            letter-spacing: 0.01em;
+            color: $txt-grey;
+            }
+
+                &__input-wrapper{
+                position: relative;
+                display: block;
+                margin-top: 4px;
+                }
+
+                    &__input{
+                    cursor: pointer;
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid rgba(33, 33, 33, 0.2);
+                    border-radius: 4px;
+                    padding-left: 42px;
+                    transition: border 250ms $cubic;
+                    }
+
+                    &__input:focus + &__icon{
+                    fill: $fha-blue;
+                    }
+                
+                    &__input:focus,
+                    &__input:hover{
+                    outline: none;
+                    border: 1px solid $fha-blue;
+                    }
+
+                        &__icon{
+                        position: absolute;
+                        display: block;
+                        top: 50%;
+                        left: 12px;
+                        transform: translateY(-50%);
+                        transition: fill 250ms $cubic;
+                        }
+}
+
+    .modal-form-policy:focus,
+    .modal-form-policy:hover {
+    outline: none;
+    border-color: $fha-blue;
+    }
+
+    .modal-form-policy{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    margin-top: 4px;
+    resize: none;
+    transition: border-color 250ms $cubic;
+    
+        &__text{
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin-left: 35px;
+        }
+
+            &__link{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.714;
+            letter-spacing: 0.03em;
+            text-decoration-line: underline;
+            color: #2196F3;
+            margin-left: 4px;
+            }
+
+            &__input{
+            position: relative;
+            }
+
+            &__input:checked + &__svg {
+            background-color: $fha-blue;
+            border: none;
+            }
+
+                &__svg{
+                border: 2px solid $b-dark;
+                border-radius: 2px;
+                position: absolute;
+                margin-left: -23px;
+                transition:  background-color 250ms $cubic;
+                }
+
+                    &__btn{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 1.875;
+                    letter-spacing: 0.06em;
+                    color: $txt-white;
+                    min-width: 200px;
+                    background-color: transparent;
+                    background: $fha-blue;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 4px;
+                    padding: 10px 32px;
+                    cursor: pointer;
+                    margin-top: 30px;
+                    border: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                    }
+                                            
+                    &__btn:focus,
+                    &__btn:hover{
+                    outline: none;
+                    border-color: $fha-blue;
+                    }
+}

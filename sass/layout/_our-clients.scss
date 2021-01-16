@@ -1,0 +1,43 @@
+.our-clients{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+        &__list{
+        justify-content: space-between;
+        padding-bottom: 94px;
+        display: flex;  
+        }
+
+            &__item:not(:last-child){
+            margin-right: 30px;
+           }
+
+            &__link{
+            display: flex;
+            justify-content: center;
+            height: 90px;
+            width: 170px;
+            border: 1px solid $icon;
+            border-radius: 4px;
+            align-items: center;
+            color: var(--icon);
+        
+            transition: color 250ms $cubic;
+            }
+
+                &__link:hover,
+                &__link:focus{
+                color: $fha-blue;
+                border-color: $fha-blue;
+                }
+
+                    &__svg{
+                    fill: currentColor;
+                    transition: fill 250ms $cubic;
+                    }
+    }
