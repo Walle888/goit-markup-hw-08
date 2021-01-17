@@ -1,45 +1,51 @@
 .activities{
-    padding-bottom: 94px;
-
-        &__title{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.166;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: $txt-dark;
-        padding-top: 94px;
-        padding-bottom: 50px;
-        }
-
-     &__list{
-     display: flex;
-     }
-
-    &__item:not(:last-child){
-    margin-right: 30px;
-    }
-            
-     &__thumb{
-     display: flex;
-     position: relative;
-    }
-
-        &__description{
-        position: absolute;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.142;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $txt-white;
-        bottom: 0;
-        background-color: rgba(47, 48, 58, 0.8);
-        height: 70px;
-        width: 370px;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        }    
+    display: none;
 }
+
+@media screen and (min-width: 1200px) {
+    .activities{
+        padding-bottom: 94px;
+        display: block;
     
+            &__title{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.166;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $txt-dark;
+            padding-top: 94px;
+            padding-bottom: 50px;
+            }
+    
+         &__list{
+         display: flex;
+         }
+    
+        &__item:not(:last-child){
+        margin-right: 30px;
+        }
+                
+         &__thumb{
+         display: flex;
+         position: relative;
+        }
+    
+            &__description{
+            position: absolute;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.142;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $txt-white;
+            bottom: 0;
+            background-color: rgba(47, 48, 58, 0.8);
+            height: 70px;
+            width: 370px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            }    
+    }
+}

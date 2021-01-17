@@ -1,46 +1,77 @@
 .quality{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 94px;
+        padding-top: 60px;
 
-    &__item:not(:last-child){
-    margin-right: 30px;
-    }
-    
     &__item{
-    width: 270px;
-    }
+        width: 450px;
+        }     
 
-    &__blok{
-    height: 120px;
-    width: 270px;
-    display: flex;
-    background: #F5F4FA;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    }
+        &__item:not(:last-child){
+                margin-bottom: 30px;
+                }
+
+                &__blok{
+                        height: 120px;
+                        display: flex;
+                        background: #F5F4FA;
+                        border-radius: 4px;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        }
 }
 
 .qualities{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $txt-dark;
-    margin-bottom: 10px;
-
-    &__description{
-        font-weight: 400;
+        font-weight: 700;
         font-size: 14px;
-        line-height: 1.714;
+        line-height: 1.142;
         letter-spacing: 0.03em;
-        color: $txt-grey;
-        }
-    }
-    
-    
-    
-    
+        text-transform: uppercase;
+        color: $txt-dark;
+        margin-bottom: 10px;
+        text-align: center;
+
+        &__description{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.714;
+            letter-spacing: 0.03em;
+            color: $txt-grey;
+            }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .quality{
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+    &__item{
+        width: 354px;
+        
+        }     
+
+        &__item:nth-child(2n + 1) {
+                margin-right: 30px;
+                }
+
+                &__item:nth-child(-n + 1) {
+                    margin-bottom: 30px;
+                  }
+}
+}
+
+@media screen and (min-width: 1200px) {
+        .quality{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 94px;
+
+            &__item:not(:last-child){
+                margin-right: 30px;
+                }
+
+                &__item{
+                    width: 270px;
+                    }
+}
+}
