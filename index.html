@@ -57,7 +57,7 @@
         </section>
    
     <!-- о нас-->
-<div class="container">
+<div class="about-us container">
     <h2 class="visually-hidden">Наши качества</h2>
 
     <ul class="quality list">
@@ -127,12 +127,27 @@
     </section>
 
 <!--Наша команда-->
-    <!-- <section class="our-staff-section">
+    <section class="our-staff-section">
             <h2 class="staff">Наша команда</h2>
             <div class="container">
             <ul class="staff__list list">
                 <li class="staff__item">
-                    <img src="images/our-staff/img-1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <picture class="staff__picture">
+                        <source srcset="images/our-staff/img1-desk-1x.webp 1x, images/our-staff/img-desk1-2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="images/our-staff/img1-desk-1x.jpg 1x, images/our-staff/img-desk1-2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                        <source srcset="images/our-staff/img1-tablet-1x.webp 1x, images/our-staff/img-tablet1-2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                        <source srcset="images/our-staff/img1-tablet-1x.jpg 1x, images/our-staff/img-tablet1-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                        <source srcset="images/our-staff/img1-1x.webp 1x, images/our-staff/img1-2x.webp 2x"
+                                media="(min-width: 320px)" type="image/webp">
+                        <source srcset="images/our-staff/img1-1x.jpg 1x, images/our-staff/img1-2x.jpg 2x"
+                                media="(min-width: 320px)">
+                        <img src="images/our-staff/img1.jpg"
+                        alt="Игорь Демьяненко" />
+                    </picture>
                     <div class="staff-wrapper">
                         <h3 class="staff-wrapper__name">Игорь Демьяненко</h3>
                         <p class="staff-wrapper__description" lang="en">Product Designer</p>
@@ -321,7 +336,7 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
    
 <h2 class="our-clients">Постоянные клиенты</h2>
 <div class="container">
@@ -384,7 +399,8 @@
 
 </main>
 
-<footer class="footer-section container">
+<footer class=" container">
+    <div class="footer-section">
             <div class="footer-left">
                <a href="./index.html" class="footer-left__logo link">Web<span class="footer-left__logo-white">Studio</span></a>
                
@@ -456,7 +472,8 @@
                 </svg> 
             </button>
             </form>
-        </div>    
+        </div> 
+    </div>   
 </footer>
 
 <!-- <div class="backdrop is-hidden" data-modal>

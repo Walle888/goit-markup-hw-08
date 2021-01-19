@@ -88,7 +88,11 @@
             &__list{
             justify-content: space-between;
             padding-bottom: 94px;
-            display: flex;  
+            display: flex;
+            }
+
+            &__item{
+                margin-bottom: 0;
             }
     
                 &__item:not(:last-child){

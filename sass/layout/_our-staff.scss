@@ -1,43 +1,38 @@
     .our-staff-section{
     left: 0px;
     background: #F5F4FA;
-    padding-bottom: 94px;
+    padding-top: 60px;
 }
-
 
         .staff{
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.166;
+        font-size: 28px;
+        line-height: 1.178;
         text-align: center;
         letter-spacing: 0.03em;
         color: $txt-dark;
     
-        padding-top: 94px;
-        padding-bottom: 50px;
+        padding-top: 60px;
+        padding-bottom: 30px;
    
             &__list{
-            display: flex;
+          
             }
 
                 &__item{
+                   
                 background: $txt-white;
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
                 border-radius: 0px 0px 4px 4px;
-                }
-
-                &__item:not(:last-child){
-                margin-right: 30px;
+                margin-bottom: 30px;
+                  align-items: center;
+            justify-content: center;
                 }
         }
-           
 
-    
-    
-    
-    .staff-wrapper{
-    padding-top: 30px;
-    padding-bottom: 16px;
+        .staff-wrapper{
+        padding-top: 30px;
+        padding-bottom: 16px;
 
         &__name{
         font-weight: bold;
@@ -57,40 +52,139 @@
             color: $txt-grey;
             }
     } 
-    
-        .staff-icons{
-        padding-bottom: 30px;
 
-            &__list{
-            display: flex;
-            justify-content: center;   
+    .staff-icons{
+                padding-bottom: 24px;
+        
+                    &__list{
+                    display: flex;
+                    justify-content: center;   
+                    }
+        
+                     &__item:not(:last-child){
+                     margin-right: 10px;
+                     }
+        
+                        &__link{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 25px;
+                        background: #FFFFFF;
+                        color: #AFB1B8;
+                        height: 44px;
+                        width: 44px;
+                        
+                        transition: background 250ms $cubic;
+                        }
+        
+                        &__link:hover,
+                        &__link:focus{
+                        color: #FFFFFF;
+                        background: $fha-blue;
+                        }
+        
+                            &__svg{
+                            fill: currentColor;
+                            transition: fill 250ms $cubic;
+                            }
             }
 
-             &__item:not(:last-child){
-             margin-right: 10px;
-             }
 
-                &__link{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 25px;
-                background: #FFFFFF;
-                color: #AFB1B8;
-                height: 44px;
-                width: 44px;
+
+//     .our-staff-section{
+//     left: 0px;
+//     background: #F5F4FA;
+//     padding-bottom: 94px;
+// }
+
+
+//         .staff{
+//         font-weight: 700;
+//         font-size: 36px;
+//         line-height: 1.166;
+//         text-align: center;
+//         letter-spacing: 0.03em;
+//         color: $txt-dark;
+    
+//         padding-top: 94px;
+//         padding-bottom: 50px;
+   
+//             &__list{
+//             display: flex;
+//             }
+
+//                 &__item{
+//                 background: $txt-white;
+//                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//                 border-radius: 0px 0px 4px 4px;
+//                 }
+
+//                 &__item:not(:last-child){
+//                 margin-right: 30px;
+//                 }
+//         }
+           
+
+    
+    
+    
+//     .staff-wrapper{
+//     padding-top: 30px;
+//     padding-bottom: 16px;
+
+//         &__name{
+//         font-weight: bold;
+//         font-size: 16px;
+//         line-height: 1.187;
+//         text-align: center;
+//         letter-spacing: 0.03em;
+//         margin-bottom: 10px;
+//         }
+
+//             &__description{
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 1.187;
+//             text-align: center;
+//             letter-spacing: 0.03em;
+//             color: $txt-grey;
+//             }
+//     } 
+    
+//         .staff-icons{
+//         padding-bottom: 30px;
+
+//             &__list{
+//             display: flex;
+//             justify-content: center;   
+//             }
+
+//              &__item:not(:last-child){
+//              margin-right: 10px;
+//              }
+
+//                 &__link{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 border-radius: 25px;
+//                 background: #FFFFFF;
+//                 color: #AFB1B8;
+//                 height: 44px;
+//                 width: 44px;
                 
-                transition: background 250ms $cubic;
-                }
+//                 transition: background 250ms $cubic;
+//                 }
 
-                &__link:hover,
-                &__link:focus{
-                color: #FFFFFF;
-                background: $fha-blue;
-                }
+//                 &__link:hover,
+//                 &__link:focus{
+//                 color: #FFFFFF;
+//                 background: $fha-blue;
+//                 }
 
-                    &__svg{
-                    fill: currentColor;
-                    transition: fill 250ms $cubic;
-                    }
-    }
+//                     &__svg{
+//                     fill: currentColor;
+//                     transition: fill 250ms $cubic;
+//                     }
+//     }
