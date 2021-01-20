@@ -1,6 +1,7 @@
 
     .footer-section{
     padding-top: 60px;
+    padding-bottom: 60px;
     background: $b-dark;
     margin-top: 30px;
     text-align: center;
@@ -105,7 +106,6 @@
     }
 
     .footer-right{
-        padding-bottom: 60px;
 
         &__description{
         font-weight: 700;

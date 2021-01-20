@@ -891,6 +891,7 @@ img {
 
 .footer-section {
   padding-top: 60px;
+  padding-bottom: 60px;
   background: #2F303A;
   margin-top: 30px;
   text-align: center;
@@ -987,10 +988,6 @@ img {
 .footer-icon-list__svg {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-right {
-  padding-bottom: 60px;
 }
 
 .footer-right__description {
