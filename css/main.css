@@ -408,7 +408,7 @@ img {
   }
   .hero {
     background: #2F303A;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desk-1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_tablet-1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -511,19 +511,28 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us .about-us {
+    padding-bottom: 30px;
+  }
   .about-us .quality {
-    padding-top: 60px;
+    padding-top: 0;
     display: flex;
     flex-wrap: wrap;
   }
   .about-us .quality__item {
     width: 354px;
   }
+  .about-us .quality__item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .about-us .quality__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .about-us .quality__item:nth-child(-n + 1) {
+  .about-us .quality__item:nth-child(-n + 2) {
     margin-bottom: 30px;
+  }
+  .about-us .quality .quality__blok {
+    margin-bottom: 0;
   }
 }
 
@@ -997,7 +1006,7 @@ img {
 
 .footer-right__mail {
   height: 50px;
-  width: 450px;
+  width: 100%;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1038,7 +1047,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-section {
+  .footer-block {
     display: flex;
     flex-wrap: wrap;
   }
@@ -1159,9 +1168,11 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-section {
-    display: flex;
     margin-top: 0;
     padding-top: 0;
+  }
+  .footer-block {
+    display: flex;
   }
   .footer-left {
     padding-top: 60px;

@@ -43,22 +43,35 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .about-us{
+        padding-bottom: 30px;
+    }
+
     .quality{
-        padding-top: 60px;
+        padding-top: 0;
         display: flex;
         flex-wrap: wrap;
 
     &__item{
         width: 354px;
+        }  
         
-        }     
+        &__item:not(:last-child){
+            margin-bottom: 0;
+            }
 
         &__item:nth-child(2n + 1) {
                 margin-right: 30px;
                 }
 
-                &__item:nth-child(-n + 1) {
+                &__item:nth-child(-n + 2) {
                     margin-bottom: 30px;
+                  }
+
+                  .quality{
+                    &__blok{
+                        margin-bottom: 0;
+                    }
                   }
 }
 }
