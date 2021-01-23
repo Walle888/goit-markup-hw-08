@@ -4,44 +4,56 @@
         background: $txt-white;
         position: relative;
 
-        .header-logo{
-
-            .logo{
+            &__logo{
              font-family: $secondary-font;
              font-weight: 700;
              font-Size: 24px;
              line-height: 1.166;
              letter-spacing: 0.03em;
              color: $fha-blue;
+             text-decoration: none;
              }
-             
+             }
                  .logo-black{
                  color: #000; 
                  }
-        }
-
+    
                 .menu-button{
-                position: absolute;
-                padding: 0;
-                margin-left: auto;
-                border: none;
                 display: inline-flex;
-
+                padding: 0;
+                margin-left: 0;
+                border: none;
                 background-color: transparent;
 
                 transition: color 250ms $cubic;
-                
-                @media screen and(min-width:768px) {
+
+                 @media screen and(min-width:768px) {
                   display: none;
                 }
+              }
 
+                .menu-button__icon-close {
+                  fill: currentColor;
+
+                  .menu-button & {
+                    display: none;
+                  }
+                  .menu-button.is-open & {
+                    display: block;
+                  }
                 }
-
                 
+                .menu-button__icon-menu {
+                  fill: currentColor;
 
- 
-        
-
+                  .menu-button & {
+                    display: block;
+                  }
+                  .menu-button.is-open & {
+                    display: none;
+                  }
+                }
+                
         .page-header{
             @media screen and(max-width: 767px) {
                 position: absolute;
@@ -75,8 +87,154 @@
                     align-items: center;
                   }
         }
-    }
+        }
+
+       .navigation{
+        @media screen and (max-width: 767px) {
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+        }
+
+           &__item:not(:last-child){
+           margin-bottom: 40px;
+           }
+            
+                &__link{
+                position: relative;
+                font-weight: 500;
+                font-Size: 18px;
+                line-height: 1.166;
+                letter-spacing: 0.02em;
+                color: $txt-dark;
+                transition: 250ms $cubic;
+                }
+
+            &__link.accent{
+            color: $fha-blue;
+            }
+            
+            &__link.accent::after{
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 4px;
+            margin-top: 8px;
+            border-radius: 2px;
+            background-color: $fha-blue;
+            transition: all 250ms $cubic;
+            }
 }
+
+
+        .contacts-header{
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 1.166;
+              letter-spacing: 0.02em;
+              margin-top: 60px;
+
+              &__address{
+                text-align: center;
+              }
+
+              &__tel,
+                  &__mail{
+                  fill: $txt-grey;
+                  }
+                  
+                  &__tel-link:hover .contacts-header__svg,
+                  &__tel-link:focus .contacts-header__svg,
+                  &__mail-link:hover .contacts-header__svg,
+                  &__mail-link:focus .contacts-header__svg{
+                  fill: $fha-blue;
+                  }
+                  
+                  &__mail-link,
+                  &__tel-link{
+                  display: flex;
+                  align-items: center;
+                  font-style: normal;
+                  color: $txt-grey;
+                  justify-content: center;
+                  }
+              
+                  &__mail-link{
+                  transition: 250ms $cubic;
+                  margin-bottom: 16px;
+                  }
+                  
+                  &__tel-link{
+                  transition: 250ms $cubic;
+                  }
+              
+                      &__svg{
+                      margin-right: 10px;
+                      transition: 250ms $cubic;
+                      }
+              }
+
+              @media screen and(min-width:768px) and (max-width:1199px) {
+                .header-section{
+                  display: flex;
+                  justify-content: space-between;
+                  padding-top: 0;
+                  padding-bottom: 0;
+
+                  &__logo{
+                    padding-top: 26px;
+                  }
+                }
+                
+                .page-header{
+                  display: flex;
+                }
+
+                .navigation{
+                  display: flex;
+                  padding-top: 32px;
+
+                  &__link.accent::after{
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 2px;
+                    top: 46px;
+                    background-color: $fha-blue;
+                    transition: all 250ms $cubic;
+                    }
+                
+
+                &__item:not(:last-child){
+                  margin-right: 50px;
+                  }
+
+                  &__link{
+                     position: relative;
+                     font-weight: 500;
+                     font-Size: 14px;
+                     line-height: 1.172;
+                     letter-spacing: 0.02em;
+                     color: $txt-dark;
+                     transition: 250ms $cubic;
+                     }
+                }
+                .contacts-header{
+                      font-weight: 500;
+                      font-size: 14px;
+                      line-height: 1.172;
+                      letter-spacing: 0.02em;
+                      margin-left: 84px;
+                      margin-top: 0;
+                      padding-top: 21px;
+                }
+
+
+              }       
+
     //     .header-logo{
 
     //                .logo{

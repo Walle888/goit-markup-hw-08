@@ -11,27 +11,23 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <header class="header-section">
-        <div class="container">
-                <div class="header-logo">
-                    <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span>
+    <header class="header-section container">
+                    <a href="./index.html" class=header-section__logo link">Web<span class="logo-black">Studio</span>
                     </a>
-                </div>
                 <button class="menu-button" data-menu-button type="button">
                     <svg width="40" height="40">
-                      <use
-                        class="menu-button__icon-menu"
-                        href="./images/sprite.svg#icon-menu">
-                    </use>
                       <use
                         class="menu-button__icon-close"
                         href="./images/sprite.svg#icon-close">
                     </use>
+                    <use
+                        class="menu-button__icon-menu"
+                        href="./images/sprite.svg#icon-menu">
+                    </use>
                     </svg>
                   </button>
                   <div class="page-header" data-menu>
-                <nav class="navigation">
-            <ul class="navigation__list list">
+            <ul class="navigation list">
                 <li class="navigation__item">
                     <a class="navigation__link accent link" href="./index.html">Студия</a>
                 </li>
@@ -42,9 +38,8 @@
                     <a class="navigation__link link" href="#">Контакты</a>
                 </li>
             </ul>
-        </nav>
         <ul class="contacts-header list">
-            <address>
+            <address class="contacts-header__address">
             <li class="contacts-header__mail">
                 <a class="contacts-header__mail-link link" href="mailto:info@devstudio.com">
                     <svg class="contacts-header__svg" width="16" height="12">
@@ -62,7 +57,6 @@
             </li>  
         </ul>
     </div>
-        </div>   
     </header>
     <main>
         <!-- Hero -->
@@ -73,7 +67,7 @@
             </div>
         </section>
    
-    <!-- о нас-->
+    <!-- about us-->
 <div class="about-us container">
     <h2 class="visually-hidden">Наши качества</h2>
 
