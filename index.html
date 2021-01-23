@@ -11,10 +11,26 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <!-- <header class="header-section">
+    <header class="header-section">
         <div class="container">
-            <nav class="navigation" >
-                <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span></a>
+                <div class="header-logo">
+                    <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span>
+                    </a>
+                </div>
+                <button class="menu-button" data-menu-button type="button">
+                    <svg width="40" height="40">
+                      <use
+                        class="menu-button__icon-menu"
+                        href="./images/sprite.svg#icon-menu">
+                    </use>
+                      <use
+                        class="menu-button__icon-close"
+                        href="./images/sprite.svg#icon-close">
+                    </use>
+                    </svg>
+                  </button>
+                  <div class="page-header" data-menu>
+                <nav class="navigation">
             <ul class="navigation__list list">
                 <li class="navigation__item">
                     <a class="navigation__link accent link" href="./index.html">Студия</a>
@@ -28,6 +44,7 @@
             </ul>
         </nav>
         <ul class="contacts-header list">
+            <address>
             <li class="contacts-header__mail">
                 <a class="contacts-header__mail-link link" href="mailto:info@devstudio.com">
                     <svg class="contacts-header__svg" width="16" height="12">
@@ -36,7 +53,6 @@
                     info@devstudio.com</a>
             </li>
             <li class="contacts-header__tel">
-            <address>
                 <a class="contacts-header__tel-link link" href="tel:+380961111111">
                     <svg class="contacts-header__svg" width="10" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>  
@@ -45,15 +61,16 @@
             </address>
             </li>  
         </ul>
+    </div>
         </div>   
-    </header> -->
+    </header>
     <main>
         <!-- Hero -->
         <section class="hero container">
                 <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <div class="hero__position">
                     <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
-                </div>
+            </div>
         </section>
    
     <!-- о нас-->
@@ -543,7 +560,7 @@
     </div>   
 </footer>
 
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
     <button type="button" class="modal__close-btn" data-modal-close>
         
@@ -602,7 +619,10 @@
     
 </form>
   </div>
- </div> -->
-<script src="./js/modal.js"></script>
+ </div>
+ <script src="./js/modal.js"></script>
+ <script src="./js/menu.js"></script>
+
+ </script>
 </body>
 </html>
