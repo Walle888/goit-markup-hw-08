@@ -138,10 +138,7 @@
               line-height: 1.166;
               letter-spacing: 0.02em;
               margin-top: 60px;
-
-              &__address{
-                text-align: center;
-              }
+              text-align: center;
 
               &__tel,
                   &__mail{
@@ -220,6 +217,8 @@
                     top: 46px;
                     background-color: $fha-blue;
                     transition: all 250ms $cubic;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
                     }
                 
 
@@ -238,11 +237,11 @@
                      }
                 }
                 .contacts-header{
+                      display: block;
                       font-weight: 500;
                       font-size: 14px;
                       line-height: 1.172;
                       letter-spacing: 0.02em;
-                      
                       margin-top: 0;
                 }
               }
@@ -306,12 +305,9 @@
           
           .contacts-header{
           margin-top: 0;
-
-          &__address{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
+          display: flex;
+          align-items: center;
+          justify-content: center;
           
           &__tel-link:hover .contacts-header__svg,
           &__tel-link:focus .contacts-header__svg,
