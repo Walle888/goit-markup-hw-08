@@ -386,10 +386,6 @@ img {
     align-items: center;
     justify-content: center;
   }
-  .contacts-header__tel, .contacts-header__mail {
-    fill: #757575;
-    align-items: center;
-  }
   .contacts-header__tel-link:hover .contacts-header__svg,
   .contacts-header__tel-link:focus .contacts-header__svg,
   .contacts-header__mail-link:hover .contacts-header__svg,

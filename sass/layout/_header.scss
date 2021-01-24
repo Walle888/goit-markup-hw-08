@@ -301,12 +301,6 @@
             align-items: center;
             justify-content: center;
           }
-      
-          &__tel,
-          &__mail{
-          fill: $txt-grey;
-          align-items: center;
-          }
           
           &__tel-link:hover .contacts-header__svg,
           &__tel-link:focus .contacts-header__svg,
