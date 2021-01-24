@@ -113,6 +113,7 @@
                 letter-spacing: 0.02em;
                 color: $txt-dark;
                 transition: 250ms $cubic;
+                padding-bottom: 8px;
                 }
 
             &__link.accent{
@@ -121,12 +122,13 @@
 
             &__link::after{
               content: "";
-              display: block;
+              display: inline-block;
               position: absolute;
               width: 100%;
               height: 4px;
               border-radius: 2px;
               bottom: 0;
+              right: 0;
             }
             
             &__link.accent::after{
