@@ -22,8 +22,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: $txt-white;
     border-radius: 4px;
 
@@ -53,7 +53,8 @@
                 display: flex;
                 font-weight: bold;
                 font-size: 20px;
-                line-height: 1.15;
+                line-height: 1.5;
+                text-align: center;
                 letter-spacing: 0.03em;
                 color: $b-dark;
                 margin-bottom: 12px;
@@ -132,11 +133,11 @@
     
         &__text{
         position: relative;
-        display: flex;
+        display: inline;
         align-items: center;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.714;
+        font-size: 12px;
+        line-height: 1.166;
         letter-spacing: 0.03em;
         color: #757575;
         margin-left: 35px;
