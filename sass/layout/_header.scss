@@ -1,11 +1,13 @@
-.header-section{
-        padding-top: 16px;
-        padding-bottom: 16px;
+        .header-pozition{
         background: $txt-white;
         position: relative;
-}
+       }
+
 
         .header-nav{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
 
             &__logo{
              font-family: $secondary-font;
@@ -23,9 +25,6 @@
     
                 .menu-button{
                 display: inline-flex;
-                padding: 0;
-                position: absolute;
-                margin-left: 276px;
                 border: none;
                 background-color: transparent;
 
@@ -58,7 +57,7 @@
                   }
                 }
                 
-        .page-header{
+        .navigation{
             @media screen and(max-width: 767px) {
                 position: absolute;
                 top: calc(100% + 1px);
@@ -131,7 +130,6 @@
             }
 }
 
-
         .contacts-header{
               font-weight: 500;
               font-size: 18px;
@@ -187,12 +185,13 @@
                   display: flex;
                   justify-content: space-between;
                   align-items: center;
+                  position: relative;
                 }
 
      .header-nav{
      display: flex;
-     justify-content: space-between;
      align-items: center;
+     justify-content: space-between;
 
      &__logo{
        margin-right: 93px;
@@ -201,7 +200,6 @@
 
                 .navigation{
                   display: flex;
-                  align-items: center;
 
                   &__item:not(:last-child) {
                     margin-bottom: 0;
@@ -226,7 +224,7 @@
                   }
 
                   &__link{
-                    display: flex;
+                    display: block;
                     align-items: center;
                      position: relative;
                      font-weight: 500;
@@ -268,13 +266,9 @@
           }
         }
 
-       .page-header{
-         display: flex;
-         align-items: center;
-       }
-
           .navigation{
-          display: flex;
+          display: flex; 
+          align-items: center;
           
           &__item:not(:last-child) {
              margin-bottom: 0;
