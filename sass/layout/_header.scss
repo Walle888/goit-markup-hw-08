@@ -1,4 +1,6 @@
         .header-pozition{
+        padding-top: 16px;
+        padding-bottom: 16px;
         background: $txt-white;
         position: relative;
        }
@@ -116,15 +118,19 @@
             &__link.accent{
             color: $fha-blue;
             }
+
+            &__link::after{
+              content: "";
+              display: block;
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              border-radius: 2px;
+              bottom: 0;
+            }
             
             &__link.accent::after{
-            display: block;
-            position: absolute;
             content: "";
-            width: 100%;
-            height: 4px;
-            margin-top: 8px;
-            border-radius: 2px;
             background-color: $fha-blue;
             transition: all 250ms $cubic;
             }
@@ -156,7 +162,6 @@
                   align-items: center;
                   font-style: normal;
                   color: $txt-grey;
-                  justify-content: center;
                   }
               
                   &__mail-link{
@@ -176,16 +181,13 @@
 
               @media screen and(min-width:768px) and (max-width:1199px) {
 
-                  .header-section{
-                  padding-top: 0;
-                  padding-bottom: 0;
-              }
-
                 .header-pozition{
                   display: flex;
                   justify-content: space-between;
                   align-items: center;
                   position: relative;
+                  padding-top: 0;
+                  padding-bottom: 0;
                 }
 
      .header-nav{
@@ -205,14 +207,18 @@
                     margin-bottom: 0;
                   }
 
-                  &__link.accent::after{
+                  &__link{
+                    content: "";
                     display: block;
                     position: absolute;
-                    content: "";
                     width: 100%;
                     height: 4px;
                     border-radius: 2px;
                     bottom: 0;
+                  }
+
+                  &__link.accent::after{
+                    content: "";
                     background-color: $fha-blue;
                     transition: all 250ms $cubic;
                     
@@ -250,6 +256,11 @@
       @media screen and (min-width: 1200px){
 
         .header-pozition{
+          padding-top: 0;
+          padding-bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           background: $txt-white;
           }
 
@@ -267,8 +278,15 @@
         }
 
           .navigation{
-          display: flex; 
-          align-items: center;
+          display: flex;
+
+          &__link{
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 14px;
+            line-height: 1.14;
+          }
           
           &__item:not(:last-child) {
              margin-bottom: 0;
@@ -282,9 +300,8 @@
                   color: $fha-blue;
                   }
                   
-                  &__link.accent::after{
-                  top: 44px;
-                  margin-top: 0;
+                  &__link::after{
+                  bottom: 0;
                   }
       }
           
