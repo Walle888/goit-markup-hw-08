@@ -370,7 +370,7 @@ img {
     color: #2196F3;
   }
   .navigation__link.accent::after {
-    top: 46px;
+    top: 44px;
     margin-top: 0;
   }
   .contacts-header {
