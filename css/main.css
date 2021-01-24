@@ -282,6 +282,13 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    margin: 0 auto;
+  }
+  .header-pozition {
+    display: flex;
+    justify-content: space-between;
+  }
   .header-section {
     display: flex;
     justify-content: space-between;
@@ -293,6 +300,7 @@ img {
   }
   .page-header {
     display: flex;
+    margin-left: 88px;
   }
   .navigation {
     display: flex;
@@ -333,11 +341,19 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    margin: 0;
+  }
   .header-section {
+    justify-content: space-between;
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
     background: #FFFFFF;
+  }
+  .header-section .header-pozition {
+    display: flex;
+    justify-content: space-between;
   }
   .header-section__logo {
     margin-right: 93px;
@@ -374,7 +390,6 @@ img {
     margin-top: 0;
   }
   .contacts-header {
-    margin-left: 305px;
     margin-top: 0;
   }
   .contacts-header__address {
@@ -588,6 +603,13 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    margin: 0 auto;
+  }
+  .header-pozition {
+    display: flex;
+    justify-content: space-between;
+  }
   .header-section {
     display: flex;
     justify-content: space-between;
@@ -599,6 +621,7 @@ img {
   }
   .page-header {
     display: flex;
+    margin-left: 88px;
   }
   .navigation {
     display: flex;
@@ -639,11 +662,19 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    margin: 0;
+  }
   .header-section {
+    justify-content: space-between;
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
     background: #FFFFFF;
+  }
+  .header-section .header-pozition {
+    display: flex;
+    justify-content: space-between;
   }
   .header-section__logo {
     margin-right: 93px;
@@ -680,7 +711,6 @@ img {
     margin-top: 0;
   }
   .contacts-header {
-    margin-left: 305px;
     margin-top: 0;
   }
   .contacts-header__address {
@@ -1724,7 +1754,7 @@ img {
 .modal {
   padding: 40px;
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
@@ -1897,5 +1927,11 @@ img {
 .modal-form-policy__btn:focus, .modal-form-policy__btn:hover {
   outline: none;
   border-color: #2196F3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 63%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -177,6 +177,14 @@
               }
 
               @media screen and(min-width:768px) and (max-width:1199px) {
+
+.container{
+  margin: 0 auto;
+}
+   .header-pozition{
+     display: flex;
+     justify-content: space-between;
+   }
                 .header-section{
                   display: flex;
                   justify-content: space-between;
@@ -190,6 +198,7 @@
                 
                 .page-header{
                   display: flex;
+                  margin-left: 88px;
                 }
 
                 .navigation{
@@ -236,12 +245,22 @@
 
       @media screen and (min-width: 1200px){
 
+.container{
+  margin: 0;
+}
+
+
         .header-section{
+          justify-content: space-between;
           display: flex;
           padding-top: 24px;
           padding-bottom: 25px;
           background: $txt-white;
           
+          .header-pozition{
+            display: flex;
+            justify-content: space-between;
+          }
           
           &__logo{
           margin-right: 93px;
@@ -287,7 +306,6 @@
       }
           
           .contacts-header{
-          margin-left: 305px;
           margin-top: 0;
 
           &__address{
