@@ -388,6 +388,7 @@ img {
   }
   .contacts-header__tel, .contacts-header__mail {
     fill: #757575;
+    align-items: center;
   }
   .contacts-header__tel-link:hover .contacts-header__svg,
   .contacts-header__tel-link:focus .contacts-header__svg,
@@ -398,8 +399,10 @@ img {
   .contacts-header__mail-link, .contacts-header__tel-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-style: normal;
     color: #757575;
+    margin-bottom: 0;
   }
   .contacts-header__mail-link {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -699,6 +702,7 @@ img {
   }
   .contacts-header__tel, .contacts-header__mail {
     fill: #757575;
+    align-items: center;
   }
   .contacts-header__tel-link:hover .contacts-header__svg,
   .contacts-header__tel-link:focus .contacts-header__svg,
@@ -709,8 +713,10 @@ img {
   .contacts-header__mail-link, .contacts-header__tel-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-style: normal;
     color: #757575;
+    margin-bottom: 0;
   }
   .contacts-header__mail-link {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

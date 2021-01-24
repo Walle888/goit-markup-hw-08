@@ -305,6 +305,7 @@
           &__tel,
           &__mail{
           fill: $txt-grey;
+          align-items: center;
           }
           
           &__tel-link:hover .contacts-header__svg,
@@ -318,8 +319,10 @@
           &__tel-link{
           display: flex;
           align-items: center;
+          justify-content: center;
           font-style: normal;
           color: $txt-grey;
+          margin-bottom: 0;
           }
       
           &__mail-link{
