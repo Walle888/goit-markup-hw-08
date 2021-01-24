@@ -168,6 +168,7 @@
                 position: absolute;
                 margin-left: -23px;
                 transition:  background-color 250ms $cubic;
+                top: 0;
                 }
 
                     &__btn{
@@ -183,7 +184,7 @@
                     border-radius: 4px;
                     padding: 10px 32px;
                     cursor: pointer;
-                    margin-top: 30px;
+                    margin-top: 31px;
                     border: none;
                     margin-left: auto;
                     margin-right: auto;
