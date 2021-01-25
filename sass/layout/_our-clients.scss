@@ -26,7 +26,7 @@
           border: 1px solid $icon;
           border-radius: 4px;
           align-items: center;
-          color: var(--icon);
+          color: $icon;
                     
           transition: color 250ms $cubic;
           }
@@ -52,16 +52,8 @@
     .our-clients{
 
         &__link{
-        display: flex;
-        justify-content: center;
         height: 90px;
         width: 226px;
-        border: 1px solid $icon;
-        border-radius: 4px;
-        align-items: center;
-        color: var(--icon);
-                  
-        transition: color 250ms $cubic;
         }
 
         &__item{
@@ -99,16 +91,8 @@
                }
     
                 &__link{
-                display: flex;
-                justify-content: center;
                 height: 90px;
                 width: 170px;
-                border: 1px solid $icon;
-                border-radius: 4px;
-                align-items: center;
-                color: var(--icon);
-            
-                transition: color 250ms $cubic;
                 }
     
                     &__link:hover,
