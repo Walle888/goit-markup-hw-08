@@ -78,10 +78,6 @@ screen and (min-resolution: 2dppx) and(min-width:768px) and (max-width: 1199px) 
 }
 
 @media screen and (min-width: 1200px) {
-.hero{
-  width: 100%;
-  background-repeat: no-repeat;
-}
 
   .hero{
     background: #2F303A;
@@ -93,7 +89,8 @@ screen and (min-resolution: 2dppx) and(min-width:768px) and (max-width: 1199px) 
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    
+    width: 100%;
+    background-position: center;
 
     &__title{
       font-weight: 900;
