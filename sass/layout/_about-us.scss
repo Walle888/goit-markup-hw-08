@@ -70,6 +70,10 @@
                         margin-bottom: 0;
                     }
                   }
+
+                  .qualities{
+                   text-align: start;
+                }
 }
 }
 
@@ -90,6 +94,15 @@
 
                 &__item{
                     width: 270px;
+                    margin-bottom: 0;
                     }
+
+                    &__item:not(:last-child){
+                        margin-bottom: 0;
+                    }
+
+                    .qualities{
+                        text-align: start;
+                     }
 }
 }

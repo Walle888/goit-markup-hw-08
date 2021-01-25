@@ -663,6 +663,9 @@ img {
   .quality .quality__blok {
     margin-bottom: 0;
   }
+  .quality .qualities {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -679,6 +682,13 @@ img {
   }
   .quality__item {
     width: 270px;
+    margin-bottom: 0;
+  }
+  .quality__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .quality .qualities {
+    text-align: start;
   }
 }
 
@@ -698,7 +708,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-top: 94px;
     padding-bottom: 50px;
   }
   .activities__list {
@@ -818,7 +827,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .staff {
-    padding-top: 0%;
+    padding-top: 60px;
   }
   .staff__list {
     display: flex;
@@ -1011,7 +1020,6 @@ img {
   padding-bottom: 60px;
   background: #2F303A;
   margin-top: 30px;
-  text-align: center;
 }
 
 .footer-left {
