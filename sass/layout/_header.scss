@@ -240,7 +240,7 @@ color: $txt-grey;
                     margin-bottom: 0;
                   }
 
-                  &__link{
+                  &__link::after{
                     content: "";
                     display: block;
                     position: absolute;
@@ -283,6 +283,13 @@ color: $txt-grey;
                       line-height: 1.14;
                       letter-spacing: 0.02em;
                       margin-top: 0;
+
+                      &__mail-link{
+                        margin-bottom: 10px;
+                      }
+
+
+
                 }
               }
 
