@@ -519,6 +519,8 @@ img {
     background-size: cover;
     align-items: center;
     background-size: 768px 400px;
+    background-position: center;
+    border-top: 1px solid #ececec;
   }
 }
 
